@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>India Heritage</title>
+    <title>My Indian Village</title>
 
     <style>
         * {
@@ -15,122 +17,179 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #fff8ed;
-            color: #3d2b1f;
+            background-color: #fff8e7;
+            color: #3d3d2b;
         }
 
         /* Header */
+
         header {
-            background-color: #8b1e1e;
+            background-color: #4f772d;
             color: white;
+
             padding: 18px 8%;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo {
-            font-size: 28px;
+            font-size: 26px;
             font-weight: bold;
         }
 
         nav a {
             color: white;
             text-decoration: none;
+
             margin-left: 25px;
+
             font-size: 16px;
         }
 
         nav a:hover {
-            color: #ffd27f;
+            color: #f9d976;
         }
 
-        /* Hero */
+
+        /* Hero Section */
+
         .hero {
+            height: 500px;
+
             background:
-                linear-gradient(rgba(70, 20, 10, 0.55),
-                rgba(70, 20, 10, 0.55)),
-                url("https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1400&q=80");
+                linear-gradient(
+                    rgba(0, 0, 0, 0.35),
+                    rgba(0, 0, 0, 0.35)
+                ),
+
+                url("https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1400&q=80");
 
             background-size: cover;
             background-position: center;
 
-            height: 500px;
-
             display: flex;
             flex-direction: column;
+
             justify-content: center;
             align-items: center;
 
             text-align: center;
+
             color: white;
         }
 
         .hero h1 {
             font-size: 50px;
+
             margin-bottom: 15px;
         }
 
         .hero p {
             font-size: 20px;
+
             max-width: 650px;
+
+            padding: 0 20px;
         }
 
         .hero button {
             margin-top: 25px;
-            padding: 13px 28px;
+
+            padding: 13px 30px;
+
             border: none;
-            background-color: #e6a43b;
-            color: #3d2b1f;
+
+            background-color: #e9b44c;
+
+            color: #3d3d2b;
+
             font-size: 16px;
+
             font-weight: bold;
+
             border-radius: 5px;
+
             cursor: pointer;
         }
 
         .hero button:hover {
-            background-color: #ffd27f;
+            background-color: #f9d976;
         }
 
-        /* About */
+
+        /* Sections */
+
         .section {
             padding: 60px 10%;
+
             text-align: center;
         }
 
         .section h2 {
-            color: #8b1e1e;
             font-size: 32px;
+
+            color: #4f772d;
+
             margin-bottom: 15px;
         }
 
         .section p {
-            color: #666;
-            line-height: 1.7;
             max-width: 800px;
+
             margin: auto;
+
+            color: #666;
+
+            line-height: 1.7;
         }
 
+
+        /* Village Life */
+
+        .village-life {
+            background-color: #eef4d3;
+        }
+
+
         /* Cards */
+
         .cards {
             display: flex;
+
             justify-content: center;
+
             gap: 25px;
+
             flex-wrap: wrap;
+
             margin-top: 35px;
         }
 
         .card {
-            background: white;
+            background-color: white;
+
             width: 280px;
+
             border-radius: 10px;
+
             overflow: hidden;
+
             box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
         }
 
         .card img {
             width: 100%;
+
             height: 190px;
+
             object-fit: cover;
         }
 
@@ -139,27 +198,57 @@
         }
 
         .card h3 {
-            color: #8b1e1e;
+            color: #4f772d;
+
             margin-bottom: 10px;
         }
 
-        /* Culture */
-        .culture {
-            background-color: #f2dfbd;
+
+        /* Quote */
+
+        .quote {
+            background-color: #d9e7b8;
+
+            padding: 50px 20px;
+
+            text-align: center;
         }
 
+        .quote h2 {
+            color: #4f772d;
+
+            margin-bottom: 15px;
+        }
+
+        .quote p {
+            font-size: 20px;
+
+            font-style: italic;
+
+            color: #555;
+        }
+
+
         /* Footer */
+
         footer {
-            background-color: #3d2b1f;
+            background-color: #2d3a1f;
+
             color: white;
+
             text-align: center;
+
             padding: 25px;
         }
+
+
+        /* Mobile */
 
         @media (max-width: 768px) {
 
             header {
                 flex-direction: column;
+
                 gap: 15px;
             }
 
@@ -173,171 +262,247 @@
 
             .hero p {
                 font-size: 16px;
-                padding: 0 20px;
             }
         }
 
     </style>
+
 </head>
+
 
 <body>
 
-    <!-- Header -->
 
-    <header>
+<!-- Header -->
 
-        <div class="logo">
-            भारत Heritage
-        </div>
+<header>
 
-        <nav>
-            <a href="#">Home</a>
-            <a href="#about">About India</a>
-            <a href="#culture">Culture</a>
-            <a href="#places">Places</a>
-        </nav>
-
-    </header>
+    <div class="logo">
+        🌾 My Village
+    </div>
 
 
-    <!-- Hero Section -->
+    <nav>
 
-    <section class="hero">
+        <a href="#">Home</a>
 
-        <h1>Discover Incredible India</h1>
+        <a href="#about">About</a>
 
-        <p>
-            A land of rich culture, beautiful traditions,
-            colorful festivals and unforgettable heritage.
-        </p>
+        <a href="#life">Village Life</a>
 
-        <button onclick="showMessage()">
-            Explore India
-        </button>
+        <a href="#nature">Nature</a>
 
-    </section>
+    </nav>
+
+</header>
 
 
-    <!-- About -->
 
-    <section class="section" id="about">
+<!-- Hero -->
 
-        <h2>The Beauty of India</h2>
+<section class="hero">
 
-        <p>
-            India is known for its rich history, diverse culture,
-            traditional values and beautiful landscapes. From the
-            Himalayas in the north to the beaches in the south,
-            every part of India has its own unique story.
-        </p>
+    <h1>Welcome to My Indian Village 🌾</h1>
 
-    </section>
+    <p>
+        Simple life, green fields, fresh air,
+        traditional culture and beautiful memories.
+    </p>
 
 
-    <!-- Culture -->
+    <button onclick="welcomeMessage()">
 
-    <section class="section culture" id="culture">
+        Explore Village
 
-        <h2>Indian Culture</h2>
+    </button>
 
-        <div class="cards">
-
-            <div class="card">
-
-                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80">
-
-                <div class="card-content">
-
-                    <h3>Traditional Food</h3>
-
-                    <p>
-                        Indian food is famous around the world for
-                        its rich spices and different flavors.
-                    </p>
-
-                </div>
-
-            </div>
+</section>
 
 
-            <div class="card">
 
-                <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=600&q=80">
+<!-- About -->
 
-                <div class="card-content">
+<section class="section" id="about">
 
-                    <h3>Indian Festivals</h3>
-
-                    <p>
-                        Festivals bring people together with colors,
-                        happiness and traditional celebrations.
-                    </p>
-
-                </div>
-
-            </div>
+    <h2>Life in the Village</h2>
 
 
-            <div class="card">
+    <p>
 
-                <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=600&q=80">
+        Indian villages represent simplicity,
+        tradition and a close connection with nature.
 
-                <div class="card-content">
+        Farmers work in green fields while families
+        live together and celebrate festivals with happiness.
 
-                    <h3>Indian Heritage</h3>
+    </p>
 
-                    <p>
-                        India has beautiful monuments and historical
-                        places that represent its rich heritage.
-                    </p>
+</section>
 
-                </div>
+
+
+<!-- Village Life -->
+
+<section class="section village-life" id="life">
+
+    <h2>Beautiful Village Life</h2>
+
+
+    <div class="cards">
+
+
+        <!-- Card 1 -->
+
+        <div class="card">
+
+            <img
+            src="https://images.unsplash.com/photo-1594489428504-5c0c480a15fd?auto=format&fit=crop&w=600&q=80"
+            alt="Indian Farming">
+
+
+            <div class="card-content">
+
+                <h3>🌾 Green Fields</h3>
+
+                <p>
+
+                    Agriculture is an important part
+                    of village life.
+
+                </p>
 
             </div>
 
         </div>
 
-    </section>
 
 
-    <!-- Places -->
+        <!-- Card 2 -->
 
-    <section class="section" id="places">
+        <div class="card">
 
-        <h2>Explore Beautiful Places</h2>
-
-        <p>
-            Taj Mahal, Jaipur, Kerala, Hyderabad, Varanasi,
-            Ladakh and many more beautiful places are waiting
-            to be explored.
-        </p>
-
-    </section>
+            <img
+            src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?auto=format&fit=crop&w=600&q=80"
+            alt="Indian Village">
 
 
-    <!-- Footer -->
+            <div class="card-content">
 
-    <footer>
+                <h3>🏡 Simple Homes</h3>
 
-        <p>
-            © 2026 India Heritage |
-            Made with ❤️ for Incredible India
-        </p>
+                <p>
 
-    </footer>
+                    Traditional homes represent
+                    the beauty of simple living.
+
+                </p>
+
+            </div>
+
+        </div>
 
 
-    <script>
 
-        function showMessage() {
+        <!-- Card 3 -->
 
-            alert(
-                "Welcome to Incredible India! 🇮🇳"
-            );
+        <div class="card">
 
-        }
+            <img
+            src="https://images.unsplash.com/photo-1600100397608-f0103d4a6c6b?auto=format&fit=crop&w=600&q=80"
+            alt="Indian Culture">
 
-    </script>
+
+            <div class="card-content">
+
+                <h3>🎉 Village Festivals</h3>
+
+                <p>
+
+                    Festivals bring families
+                    and communities together.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- Nature -->
+
+<section class="section" id="nature">
+
+    <h2>Close to Nature 🌳</h2>
+
+
+    <p>
+
+        Village life offers fresh air,
+        green farms, beautiful trees,
+        peaceful mornings and a simple lifestyle.
+
+    </p>
+
+</section>
+
+
+
+<!-- Quote -->
+
+<section class="quote">
+
+    <h2>Village Life</h2>
+
+
+    <p>
+
+        "The real beauty of India lives in its villages." 🌾🇮🇳
+
+    </p>
+
+</section>
+
+
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+
+        © 2026 My Indian Village
+
+        <br>
+
+        Made with ❤️ and love for village life 🌾
+
+    </p>
+
+</footer>
+
+
+
+<!-- JavaScript -->
+
+<script>
+
+    function welcomeMessage() {
+
+        alert(
+            "Welcome to the beautiful Indian Village! 🌾🇮🇳"
+        );
+
+    }
+
+</script>
+
 
 </body>
+
 </html>
