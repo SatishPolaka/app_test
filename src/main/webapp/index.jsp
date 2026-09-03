@@ -7,7 +7,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>మన ఊరు | Mana Ooru</title>
+    <title>మన ఊరు GNANESAR | Mana Ooru</title>
 
     <style>
 
