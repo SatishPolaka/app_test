@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="te">
 
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <title>My Indian Village</title>
+    <title>మన ఊరు | Mana Ooru</title>
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+
         body {
             font-family: Arial, sans-serif;
-            background-color: #fff8e7;
-            color: #3d3d2b;
+            background-color: #fff9ed;
+            color: #3f3a2b;
         }
+
 
         /* Header */
 
         header {
-            background-color: #4f772d;
+            background-color: #8b3a1c;
             color: white;
 
             padding: 18px 8%;
@@ -34,10 +38,12 @@
             align-items: center;
         }
 
+
         .logo {
             font-size: 26px;
             font-weight: bold;
         }
+
 
         nav a {
             color: white;
@@ -48,26 +54,33 @@
             font-size: 16px;
         }
 
+
         nav a:hover {
-            color: #f9d976;
+            color: #ffd166;
         }
 
 
         /* Hero Section */
 
         .hero {
-            height: 500px;
+
+            height: 520px;
 
             background:
+
                 linear-gradient(
-                    rgba(0, 0, 0, 0.35),
-                    rgba(0, 0, 0, 0.35)
+                    rgba(0, 0, 0, 0.40),
+                    rgba(0, 0, 0, 0.40)
                 ),
 
-                url("https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1400&q=80");
+                url(
+                    "https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1400&q=80"
+                );
+
 
             background-size: cover;
             background-position: center;
+
 
             display: flex;
             flex-direction: column;
@@ -75,87 +88,117 @@
             justify-content: center;
             align-items: center;
 
+
             text-align: center;
 
             color: white;
         }
 
-        .hero h1 {
-            font-size: 50px;
 
-            margin-bottom: 15px;
+        .hero h1 {
+
+            font-size: 52px;
+
+            margin-bottom: 18px;
         }
+
+
+        .hero h2 {
+
+            font-size: 24px;
+
+            margin-bottom: 20px;
+
+            color: #ffd166;
+        }
+
 
         .hero p {
-            font-size: 20px;
 
-            max-width: 650px;
+            font-size: 19px;
+
+            max-width: 700px;
 
             padding: 0 20px;
+
+            line-height: 1.6;
         }
 
+
         .hero button {
+
             margin-top: 25px;
 
-            padding: 13px 30px;
+            padding: 14px 30px;
 
             border: none;
 
-            background-color: #e9b44c;
+            background-color: #e9a23b;
 
-            color: #3d3d2b;
+            color: #3f2a1d;
 
             font-size: 16px;
 
             font-weight: bold;
 
-            border-radius: 5px;
+            border-radius: 6px;
 
             cursor: pointer;
         }
 
+
         .hero button:hover {
-            background-color: #f9d976;
+
+            background-color: #ffd166;
         }
 
 
-        /* Sections */
+        /* Common Section */
 
         .section {
-            padding: 60px 10%;
+
+            padding: 65px 10%;
 
             text-align: center;
         }
 
+
         .section h2 {
+
             font-size: 32px;
 
-            color: #4f772d;
+            color: #8b3a1c;
 
-            margin-bottom: 15px;
+            margin-bottom: 18px;
         }
 
+
         .section p {
-            max-width: 800px;
+
+            max-width: 850px;
 
             margin: auto;
 
             color: #666;
 
-            line-height: 1.7;
+            line-height: 1.8;
+
+            font-size: 16px;
         }
 
 
         /* Village Life */
 
         .village-life {
-            background-color: #eef4d3;
+
+            background-color: #eaf2d5;
         }
 
 
         /* Cards */
 
         .cards {
+
             display: flex;
 
             justify-content: center;
@@ -167,25 +210,34 @@
             margin-top: 35px;
         }
 
+
         .card {
+
             background-color: white;
 
-            width: 280px;
+            width: 290px;
 
-            border-radius: 10px;
+            border-radius: 12px;
 
             overflow: hidden;
 
-            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            box-shadow:
+                0 5px 18px
+                rgba(0, 0, 0, 0.15);
 
             transition: 0.3s;
         }
 
+
         .card:hover {
-            transform: translateY(-8px);
+
+            transform:
+                translateY(-8px);
         }
 
+
         .card img {
+
             width: 100%;
 
             height: 190px;
@@ -193,46 +245,74 @@
             object-fit: cover;
         }
 
+
         .card-content {
+
             padding: 20px;
         }
 
-        .card h3 {
-            color: #4f772d;
 
-            margin-bottom: 10px;
+        .card h3 {
+
+            color: #8b3a1c;
+
+            margin-bottom: 12px;
+
+            font-size: 21px;
+        }
+
+
+        .card p {
+
+            font-size: 14px;
+        }
+
+
+        /* Festival Section */
+
+        .festival {
+
+            background-color: #fff0c9;
         }
 
 
         /* Quote */
 
         .quote {
-            background-color: #d9e7b8;
 
-            padding: 50px 20px;
+            background-color: #7a3d1c;
+
+            color: white;
 
             text-align: center;
+
+            padding: 60px 20px;
         }
+
 
         .quote h2 {
-            color: #4f772d;
 
-            margin-bottom: 15px;
+            font-size: 30px;
+
+            margin-bottom: 18px;
         }
 
+
         .quote p {
-            font-size: 20px;
+
+            font-size: 21px;
 
             font-style: italic;
 
-            color: #555;
+            line-height: 1.7;
         }
 
 
         /* Footer */
 
         footer {
-            background-color: #2d3a1f;
+
+            background-color: #3d2b1f;
 
             color: white;
 
@@ -244,25 +324,41 @@
 
         /* Mobile */
 
-        @media (max-width: 768px) {
+        @media
+        (max-width: 768px) {
+
 
             header {
+
                 flex-direction: column;
 
                 gap: 15px;
             }
 
+
             nav a {
+
                 margin: 8px;
             }
 
+
             .hero h1 {
-                font-size: 34px;
+
+                font-size: 35px;
             }
 
+
+            .hero h2 {
+
+                font-size: 20px;
+            }
+
+
             .hero p {
+
                 font-size: 16px;
             }
+
         }
 
     </style>
@@ -277,65 +373,106 @@
 
 <header>
 
+
     <div class="logo">
-        🌾 My Village
+
+        🌾 మన ఊరు
+
     </div>
 
 
     <nav>
 
-        <a href="#">Home</a>
+        <a href="#home">
+            Home
+        </a>
 
-        <a href="#about">About</a>
+        <a href="#about">
+            మన ఊరు
+        </a>
 
-        <a href="#life">Village Life</a>
+        <a href="#life">
+            Village Life
+        </a>
 
-        <a href="#nature">Nature</a>
+        <a href="#festival">
+            Festivals
+        </a>
 
     </nav>
+
 
 </header>
 
 
 
-<!-- Hero -->
+<!-- Hero Section -->
 
-<section class="hero">
+<section
+id="home"
+class="hero">
 
-    <h1>Welcome to My Indian Village 🌾</h1>
+
+    <h1>
+        మన ఊరు 🌾
+    </h1>
+
+
+    <h2>
+        Mana Ooru – Mana Samskruthi
+    </h2>
+
 
     <p>
-        Simple life, green fields, fresh air,
-        traditional culture and beautiful memories.
+
+        ప్రకృతి అందాలతో,
+        పచ్చని పొలాలతో,
+        మన సంప్రదాయాలతో
+        నిండిన అందమైన తెలుగు గ్రామం.
+
     </p>
 
 
-    <button onclick="welcomeMessage()">
+    <button
+    onclick="welcomeMessage()">
 
-        Explore Village
+        మన ఊరిని చూడండి 🌾
 
     </button>
+
 
 </section>
 
 
 
-<!-- About -->
+<!-- About Section -->
 
-<section class="section" id="about">
+<section
+class="section"
+id="about">
 
-    <h2>Life in the Village</h2>
+
+    <h2>
+
+        మన ఊరి అందాలు ❤️
+
+    </h2>
 
 
     <p>
 
-        Indian villages represent simplicity,
-        tradition and a close connection with nature.
+        తెలుగు గ్రామ జీవితం అంటే
+        పచ్చని పొలాలు,
+        ఉదయపు స్వచ్ఛమైన గాలి,
+        చెట్ల నీడ,
+        కుటుంబ బంధాలు
+        మరియు మన సంప్రదాయాలు.
 
-        Farmers work in green fields while families
-        live together and celebrate festivals with happiness.
+        గ్రామంలో జీవితం
+        ప్రకృతికి చాలా దగ్గరగా ఉంటుంది.
 
     </p>
+
 
 </section>
 
@@ -343,9 +480,17 @@
 
 <!-- Village Life -->
 
-<section class="section village-life" id="life">
+<section
+class="section village-life"
+id="life">
 
-    <h2>Beautiful Village Life</h2>
+
+    <h2>
+
+        గ్రామీణ జీవితం 🌾
+
+    </h2>
+
 
 
     <div class="cards">
@@ -355,23 +500,34 @@
 
         <div class="card">
 
+
             <img
             src="https://images.unsplash.com/photo-1594489428504-5c0c480a15fd?auto=format&fit=crop&w=600&q=80"
-            alt="Indian Farming">
+            alt="Agriculture">
 
 
             <div class="card-content">
 
-                <h3>🌾 Green Fields</h3>
+
+                <h3>
+
+                    🌾 పచ్చని పొలాలు
+
+                </h3>
+
 
                 <p>
 
-                    Agriculture is an important part
-                    of village life.
+                    రైతుల కష్టంతో
+                    పచ్చగా మెరిసే పొలాలు
+                    మన గ్రామాల అందాన్ని
+                    మరింత పెంచుతాయి.
 
                 </p>
 
+
             </div>
+
 
         </div>
 
@@ -381,23 +537,34 @@
 
         <div class="card">
 
+
             <img
-            src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?auto=format&fit=crop&w=600&q=80"
-            alt="Indian Village">
+            src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80"
+            alt="Village Life">
 
 
             <div class="card-content">
 
-                <h3>🏡 Simple Homes</h3>
+
+                <h3>
+
+                    🏡 సాదాసీదా జీవితం
+
+                </h3>
+
 
                 <p>
 
-                    Traditional homes represent
-                    the beauty of simple living.
+                    గ్రామ జీవితం
+                    ప్రశాంతంగా,
+                    సంతోషంగా
+                    మరియు ప్రకృతికి దగ్గరగా ఉంటుంది.
 
                 </p>
 
+
             </div>
+
 
         </div>
 
@@ -407,6 +574,7 @@
 
         <div class="card">
 
+
             <img
             src="https://images.unsplash.com/photo-1600100397608-f0103d4a6c6b?auto=format&fit=crop&w=600&q=80"
             alt="Indian Culture">
@@ -414,40 +582,152 @@
 
             <div class="card-content">
 
-                <h3>🎉 Village Festivals</h3>
+
+                <h3>
+
+                    🐄 పశువులు
+
+                </h3>
+
 
                 <p>
 
-                    Festivals bring families
-                    and communities together.
+                    పశువులు మరియు వ్యవసాయం
+                    తెలుగు గ్రామ జీవనంలో
+                    ముఖ్యమైన భాగం.
 
                 </p>
 
+
             </div>
+
 
         </div>
 
 
     </div>
 
+
 </section>
 
 
 
-<!-- Nature -->
+<!-- Festivals -->
 
-<section class="section" id="nature">
+<section
+class="section festival"
+id="festival">
 
-    <h2>Close to Nature 🌳</h2>
+
+    <h2>
+
+        మన పండుగలు 🎉
+
+    </h2>
 
 
-    <p>
 
-        Village life offers fresh air,
-        green farms, beautiful trees,
-        peaceful mornings and a simple lifestyle.
+    <div class="cards">
 
-    </p>
+
+        <!-- Sankranti -->
+
+        <div class="card">
+
+
+            <div class="card-content">
+
+
+                <h3>
+
+                    🪁 సంక్రాంతి
+
+                </h3>
+
+
+                <p>
+
+                    రంగవల్లులు,
+                    పిండివంటలు,
+                    గాలిపటాలు
+                    మరియు కుటుంబంతో
+                    ఆనందంగా జరుపుకునే పండుగ.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- Bathukamma -->
+
+        <div class="card">
+
+
+            <div class="card-content">
+
+
+                <h3>
+
+                    🌸 బతుకమ్మ
+
+                </h3>
+
+
+                <p>
+
+                    తెలంగాణ సంస్కృతిని
+                    ప్రతిబింబించే
+                    అందమైన పూల పండుగ.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- Ugadi -->
+
+        <div class="card">
+
+
+            <div class="card-content">
+
+
+                <h3>
+
+                    🥭 ఉగాది
+
+                </h3>
+
+
+                <p>
+
+                    తెలుగు కొత్త సంవత్సరం.
+
+                    కొత్త ఆశలు మరియు
+                    ఆనందంతో జరుపుకునే
+                    ప్రత్యేకమైన రోజు.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
 
 </section>
 
@@ -455,16 +735,27 @@
 
 <!-- Quote -->
 
-<section class="quote">
+<section
+class="quote">
 
-    <h2>Village Life</h2>
+
+    <h2>
+
+        మన ఊరు ❤️
+
+    </h2>
 
 
     <p>
 
-        "The real beauty of India lives in its villages." 🌾🇮🇳
+        "పచ్చని పొలాలు...
+        స్వచ్ఛమైన గాలి...
+        మనుషుల మధ్య ప్రేమ...
+
+        అదే మన తెలుగు గ్రామ జీవితం." 🌾
 
     </p>
+
 
 </section>
 
@@ -474,15 +765,17 @@
 
 <footer>
 
+
     <p>
 
-        © 2026 My Indian Village
+        © 2026 మన ఊరు
 
-        <br>
+        <br><br>
 
-        Made with ❤️ and love for village life 🌾
+        Made with ❤️ for Telugu Village Life 🌾
 
     </p>
+
 
 </footer>
 
@@ -492,13 +785,19 @@
 
 <script>
 
+
     function welcomeMessage() {
 
+
         alert(
-            "Welcome to the beautiful Indian Village! 🌾🇮🇳"
+
+            "మన ఊరికి స్వాగతం! 🌾❤️\nWelcome to our Telugu Village!"
+
         );
 
+
     }
+
 
 </script>
 
