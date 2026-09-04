@@ -1,807 +1,343 @@
 <!DOCTYPE html>
-<html lang="te">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>మన ఊరు GNANESAR SATISH | Mana Ooru</title>
+    <title>India Heritage</title>
 
     <style>
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-
         body {
             font-family: Arial, sans-serif;
-            background-color: #fff9ed;
-            color: #3f3a2b;
+            background-color: #fff8ed;
+            color: #3d2b1f;
         }
 
-
         /* Header */
-
         header {
-            background-color: #8b3a1c;
+            background-color: #8b1e1e;
             color: white;
-
             padding: 18px 8%;
-
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-
         .logo {
-            font-size: 26px;
+            font-size: 28px;
             font-weight: bold;
         }
-
 
         nav a {
             color: white;
             text-decoration: none;
-
             margin-left: 25px;
-
             font-size: 16px;
         }
 
-
         nav a:hover {
-            color: #ffd166;
+            color: #ffd27f;
         }
 
-
-        /* Hero Section */
-
+        /* Hero */
         .hero {
-
-            height: 520px;
-
             background:
-
-                linear-gradient(
-                    rgba(0, 0, 0, 0.40),
-                    rgba(0, 0, 0, 0.40)
-                ),
-
-                url(
-                    "https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1400&q=80"
-                );
-
+                linear-gradient(rgba(70, 20, 10, 0.55),
+                rgba(70, 20, 10, 0.55)),
+                url("https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1400&q=80");
 
             background-size: cover;
             background-position: center;
 
+            height: 500px;
 
             display: flex;
             flex-direction: column;
-
             justify-content: center;
             align-items: center;
 
-
             text-align: center;
-
             color: white;
         }
 
-
         .hero h1 {
-
-            font-size: 52px;
-
-            margin-bottom: 18px;
+            font-size: 50px;
+            margin-bottom: 15px;
         }
-
-
-        .hero h2 {
-
-            font-size: 24px;
-
-            margin-bottom: 20px;
-
-            color: #ffd166;
-        }
-
 
         .hero p {
-
-            font-size: 19px;
-
-            max-width: 700px;
-
-            padding: 0 20px;
-
-            line-height: 1.6;
+            font-size: 20px;
+            max-width: 650px;
         }
 
-
         .hero button {
-
             margin-top: 25px;
-
-            padding: 14px 30px;
-
+            padding: 13px 28px;
             border: none;
-
-            background-color: #e9a23b;
-
-            color: #3f2a1d;
-
+            background-color: #e6a43b;
+            color: #3d2b1f;
             font-size: 16px;
-
             font-weight: bold;
-
-            border-radius: 6px;
-
+            border-radius: 5px;
             cursor: pointer;
         }
 
-
         .hero button:hover {
-
-            background-color: #ffd166;
+            background-color: #ffd27f;
         }
 
-
-        /* Common Section */
-
+        /* About */
         .section {
-
-            padding: 65px 10%;
-
+            padding: 60px 10%;
             text-align: center;
         }
 
-
         .section h2 {
-
+            color: #8b1e1e;
             font-size: 32px;
-
-            color: #8b3a1c;
-
-            margin-bottom: 18px;
+            margin-bottom: 15px;
         }
-
 
         .section p {
-
-            max-width: 850px;
-
-            margin: auto;
-
             color: #666;
-
-            line-height: 1.8;
-
-            font-size: 16px;
+            line-height: 1.7;
+            max-width: 800px;
+            margin: auto;
         }
-
-
-        /* Village Life */
-
-        .village-life {
-
-            background-color: #eaf2d5;
-        }
-
 
         /* Cards */
-
         .cards {
-
             display: flex;
-
             justify-content: center;
-
             gap: 25px;
-
             flex-wrap: wrap;
-
             margin-top: 35px;
         }
 
-
         .card {
-
-            background-color: white;
-
-            width: 290px;
-
-            border-radius: 12px;
-
+            background: white;
+            width: 280px;
+            border-radius: 10px;
             overflow: hidden;
-
-            box-shadow:
-                0 5px 18px
-                rgba(0, 0, 0, 0.15);
-
-            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
         }
-
-
-        .card:hover {
-
-            transform:
-                translateY(-8px);
-        }
-
 
         .card img {
-
             width: 100%;
-
             height: 190px;
-
             object-fit: cover;
         }
 
-
         .card-content {
-
             padding: 20px;
         }
 
-
         .card h3 {
-
-            color: #8b3a1c;
-
-            margin-bottom: 12px;
-
-            font-size: 21px;
+            color: #8b1e1e;
+            margin-bottom: 10px;
         }
 
-
-        .card p {
-
-            font-size: 14px;
+        /* Culture */
+        .culture {
+            background-color: #f2dfbd;
         }
-
-
-        /* Festival Section */
-
-        .festival {
-
-            background-color: #fff0c9;
-        }
-
-
-        /* Quote */
-
-        .quote {
-
-            background-color: #7a3d1c;
-
-            color: white;
-
-            text-align: center;
-
-            padding: 60px 20px;
-        }
-
-
-        .quote h2 {
-
-            font-size: 30px;
-
-            margin-bottom: 18px;
-        }
-
-
-        .quote p {
-
-            font-size: 21px;
-
-            font-style: italic;
-
-            line-height: 1.7;
-        }
-
 
         /* Footer */
-
         footer {
-
             background-color: #3d2b1f;
-
             color: white;
-
             text-align: center;
-
             padding: 25px;
         }
 
-
-        /* Mobile */
-
-        @media
-        (max-width: 768px) {
-
+        @media (max-width: 768px) {
 
             header {
-
                 flex-direction: column;
-
                 gap: 15px;
             }
 
-
             nav a {
-
                 margin: 8px;
             }
 
-
             .hero h1 {
-
-                font-size: 35px;
+                font-size: 34px;
             }
-
-
-            .hero h2 {
-
-                font-size: 20px;
-            }
-
 
             .hero p {
-
                 font-size: 16px;
+                padding: 0 20px;
             }
-
         }
 
     </style>
-
 </head>
-
 
 <body>
 
+    <!-- Header -->
 
-<!-- Header -->
+    <header>
 
-<header>
+        <div class="logo">
+            भारत Heritage
+        </div>
 
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About India</a>
+            <a href="#culture">Culture</a>
+            <a href="#places">Places</a>
+        </nav>
 
-    <div class="logo">
+    </header>
 
-        🌾 మన ఊరు
 
-    </div>
+    <!-- Hero Section -->
 
+    <section class="hero">
 
-    <nav>
+        <h1>Discover Incredible India</h1>
 
-        <a href="#home">
-            Home
-        </a>
+        <p>
+            A land of rich culture, beautiful traditions,
+            colorful festivals and unforgettable heritage.
+        </p>
 
-        <a href="#about">
-            మన ఊరు
-        </a>
+        <button onclick="showMessage()">
+            Explore India
+        </button>
 
-        <a href="#life">
-            Village Life
-        </a>
+    </section>
 
-        <a href="#festival">
-            Festivals
-        </a>
 
-    </nav>
+    <!-- About -->
 
+    <section class="section" id="about">
 
-</header>
+        <h2>The Beauty of India</h2>
 
+        <p>
+            India is known for its rich history, diverse culture,
+            traditional values and beautiful landscapes. From the
+            Himalayas in the north to the beaches in the south,
+            every part of India has its own unique story.
+        </p>
 
+    </section>
 
-<!-- Hero Section -->
 
-<section
-id="home"
-class="hero">
+    <!-- Culture -->
 
+    <section class="section culture" id="culture">
 
-    <h1>
-        మన ఊరు 🌾
-    </h1>
+        <h2>Indian Culture</h2>
 
+        <div class="cards">
 
-    <h2>
-        Mana Ooru – Mana Samskruthi
-    </h2>
+            <div class="card">
 
+                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80">
 
-    <p>
+                <div class="card-content">
 
-        ప్రకృతి అందాలతో,
-        పచ్చని పొలాలతో,
-        మన సంప్రదాయాలతో
-        నిండిన అందమైన తెలుగు గ్రామం.
+                    <h3>Traditional Food</h3>
 
-    </p>
+                    <p>
+                        Indian food is famous around the world for
+                        its rich spices and different flavors.
+                    </p>
 
-
-    <button
-    onclick="welcomeMessage()">
-
-        మన ఊరిని చూడండి 🌾
-
-    </button>
-
-
-</section>
-
-
-
-<!-- About Section -->
-
-<section
-class="section"
-id="about">
-
-
-    <h2>
-
-        మన ఊరి అందాలు ❤️
-
-    </h2>
-
-
-    <p>
-
-        తెలుగు గ్రామ జీవితం అంటే
-        పచ్చని పొలాలు,
-        ఉదయపు స్వచ్ఛమైన గాలి,
-        చెట్ల నీడ,
-        కుటుంబ బంధాలు
-        మరియు మన సంప్రదాయాలు.
-
-        గ్రామంలో జీవితం
-        ప్రకృతికి చాలా దగ్గరగా ఉంటుంది.
-
-    </p>
-
-
-</section>
-
-
-
-<!-- Village Life -->
-
-<section
-class="section village-life"
-id="life">
-
-
-    <h2>
-
-        గ్రామీణ జీవితం 🌾
-
-    </h2>
-
-
-
-    <div class="cards">
-
-
-        <!-- Card 1 -->
-
-        <div class="card">
-
-
-            <img
-            src="https://images.unsplash.com/photo-1594489428504-5c0c480a15fd?auto=format&fit=crop&w=600&q=80"
-            alt="Agriculture">
-
-
-            <div class="card-content">
-
-
-                <h3>
-
-                    🌾 పచ్చని పొలాలు
-
-                </h3>
-
-
-                <p>
-
-                    రైతుల కష్టంతో
-                    పచ్చగా మెరిసే పొలాలు
-                    మన గ్రామాల అందాన్ని
-                    మరింత పెంచుతాయి.
-
-                </p>
-
+                </div>
 
             </div>
 
 
-        </div>
+            <div class="card">
 
+                <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=600&q=80">
 
+                <div class="card-content">
 
-        <!-- Card 2 -->
+                    <h3>Indian Festivals</h3>
 
-        <div class="card">
+                    <p>
+                        Festivals bring people together with colors,
+                        happiness and traditional celebrations.
+                    </p>
 
-
-            <img
-            src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80"
-            alt="Village Life">
-
-
-            <div class="card-content">
-
-
-                <h3>
-
-                    🏡 సాదాసీదా జీవితం
-
-                </h3>
-
-
-                <p>
-
-                    గ్రామ జీవితం
-                    ప్రశాంతంగా,
-                    సంతోషంగా
-                    మరియు ప్రకృతికి దగ్గరగా ఉంటుంది.
-
-                </p>
-
+                </div>
 
             </div>
 
 
-        </div>
+            <div class="card">
 
+                <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=600&q=80">
 
+                <div class="card-content">
 
-        <!-- Card 3 -->
+                    <h3>Indian Heritage</h3>
 
-        <div class="card">
+                    <p>
+                        India has beautiful monuments and historical
+                        places that represent its rich heritage.
+                    </p>
 
-
-            <img
-            src="https://images.unsplash.com/photo-1600100397608-f0103d4a6c6b?auto=format&fit=crop&w=600&q=80"
-            alt="Indian Culture">
-
-
-            <div class="card-content">
-
-
-                <h3>
-
-                    🐄 పశువులు
-
-                </h3>
-
-
-                <p>
-
-                    పశువులు మరియు వ్యవసాయం
-                    తెలుగు గ్రామ జీవనంలో
-                    ముఖ్యమైన భాగం.
-
-                </p>
-
+                </div>
 
             </div>
 
-
         </div>
 
+    </section>
 
-    </div>
 
+    <!-- Places -->
 
-</section>
+    <section class="section" id="places">
 
+        <h2>Explore Beautiful Places</h2>
 
+        <p>
+            Taj Mahal, Jaipur, Kerala, Hyderabad, Varanasi,
+            Ladakh and many more beautiful places are waiting
+            to be explored.
+        </p>
 
-<!-- Festivals -->
+    </section>
 
-<section
-class="section festival"
-id="festival">
 
+    <!-- Footer -->
 
-    <h2>
+    <footer>
 
-        మన పండుగలు 🎉
+        <p>
+            © 2026 India Heritage |
+            Made with ❤️ for Incredible India
+        </p>
 
-    </h2>
+    </footer>
 
 
+    <script>
 
-    <div class="cards">
+        function showMessage() {
 
+            alert(
+                "Welcome to Incredible India! 🇮🇳"
+            );
 
-        <!-- Sankranti -->
+        }
 
-        <div class="card">
-
-
-            <div class="card-content">
-
-
-                <h3>
-
-                    🪁 సంక్రాంతి
-
-                </h3>
-
-
-                <p>
-
-                    రంగవల్లులు,
-                    పిండివంటలు,
-                    గాలిపటాలు
-                    మరియు కుటుంబంతో
-                    ఆనందంగా జరుపుకునే పండుగ.
-
-                </p>
-
-
-            </div>
-
-
-        </div>
-
-
-
-        <!-- Bathukamma -->
-
-        <div class="card">
-
-
-            <div class="card-content">
-
-
-                <h3>
-
-                    🌸 బతుకమ్మ
-
-                </h3>
-
-
-                <p>
-
-                    తెలంగాణ సంస్కృతిని
-                    ప్రతిబింబించే
-                    అందమైన పూల పండుగ.
-
-                </p>
-
-
-            </div>
-
-
-        </div>
-
-
-
-        <!-- Ugadi -->
-
-        <div class="card">
-
-
-            <div class="card-content">
-
-
-                <h3>
-
-                    🥭 ఉగాది
-
-                </h3>
-
-
-                <p>
-
-                    తెలుగు కొత్త సంవత్సరం.
-
-                    కొత్త ఆశలు మరియు
-                    ఆనందంతో జరుపుకునే
-                    ప్రత్యేకమైన రోజు.
-
-                </p>
-
-
-            </div>
-
-
-        </div>
-
-
-    </div>
-
-
-</section>
-
-
-
-<!-- Quote -->
-
-<section
-class="quote">
-
-
-    <h2>
-
-        మన ఊరు ❤️
-
-    </h2>
-
-
-    <p>
-
-        "పచ్చని పొలాలు...
-        స్వచ్ఛమైన గాలి...
-        మనుషుల మధ్య ప్రేమ...
-
-        అదే మన తెలుగు గ్రామ జీవితం." 🌾
-
-    </p>
-
-
-</section>
-
-
-
-<!-- Footer -->
-
-<footer>
-
-
-    <p>
-
-        © 2026 మన ఊరు
-
-        <br><br>
-
-        Made with ❤️ for Telugu Village Life 🌾
-
-    </p>
-
-
-</footer>
-
-
-
-<!-- JavaScript -->
-
-<script>
-
-
-    function welcomeMessage() {
-
-
-        alert(
-
-            "మన ఊరికి స్వాగతం! 🌾❤️\nWelcome to our Telugu Village!"
-
-        );
-
-
-    }
-
-
-</script>
-
+    </script>
 
 </body>
-
 </html>
