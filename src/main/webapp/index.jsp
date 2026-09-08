@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SATISH Heritage</title>
+    <title>SATISH Reddy</title>
 
     <style>
         * {
